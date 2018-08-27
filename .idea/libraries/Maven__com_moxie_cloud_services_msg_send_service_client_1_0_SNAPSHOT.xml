@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.moxie.cloud.services:msg-send-service-client:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/moxie/cloud/services/msg-send-service-client/1.0-SNAPSHOT/msg-send-service-client-1.0-20180718.061701-32.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/moxie/cloud/services/msg-send-service-client/1.0-SNAPSHOT/msg-send-service-client-1.0-20180718.061701-32-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/moxie/cloud/services/msg-send-service-client/1.0-SNAPSHOT/msg-send-service-client-1.0-20180718.061701-32-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

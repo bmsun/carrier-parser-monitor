@@ -1,0 +1,155 @@
+<html  xmlns="http://www.w3.org/1999/xhtml" >
+    <head>
+        <title>运营商缺失情况统计</title>
+        <style type="text/css">
+            body {
+            border-collapse:collapse;
+            width: 100%;
+            margin: 40px auto;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            color: #444;
+            }
+            table {
+            *border-collapse: collapse; /* IE7 and lower */
+            table-layout:fixed;
+            border-spacing: 0;
+            width: 100%;
+            }
+
+            .bordered {
+            border-collapse:collapse;
+            border: solid #ccc 1px;
+            -moz-border-radius: 0px;
+            -webkit-border-radius: 0px;
+            border-radius: 0px;
+            -webkit-box-shadow: 0 0px 0px #ccc;
+            -moz-box-shadow: 0 0px 0px #ccc;
+            box-shadow: 0 0px 0px #ccc;
+            }
+
+            .bordered tr:hover {
+            border-collapse:collapse;
+            background: #fbf8e9;
+            -o-transition: all 0.1s ease-in-out;
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -ms-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+            }
+
+            .bordered td {
+            border-collapse:collapse;
+            border-left: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+            overflow:scroll;
+
+            }
+
+            .bordered th {
+            border-collapse:collapse;
+            border-left: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+            padding: 5px;
+            text-align: center;
+            }
+
+            .bordered th {
+            border-collapse:collapse;
+            font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+            background-color: #dce9f9;
+            border-left: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+            -webkit-box-shadow: 0 0px 0 rgba(255,255,255,.8) inset;
+            -moz-box-shadow:0 0px 0 rgba(255,255,255,.8) inset;
+            box-shadow: 0 0px 0 rgba(255,255,255,.8) inset;
+            text-shadow: 0 0px 0 rgba(255,255,255,.8);
+            }
+
+            .bordered td:first-child, .bordered th:first-child {
+            font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+            border-collapse:collapse;
+            border-left: 1px solid #ccc;
+            }
+
+            .bordered th:first-child {
+            border-collapse:collapse;
+            -moz-border-radius: 1px 0 0 0;
+            -webkit-border-radius: 1px 0 0 0;
+            border-radius: 1px 0 0 0;
+            }
+
+            .bordered th:last-child {
+            border-collapse:collapse;
+            -moz-border-radius: 0 1px 0 0;
+            -webkit-border-radius: 0 1px 0 0;
+            border-radius: 0 1px 0 0;
+            }
+
+            .bordered th:only-child{
+            border-collapse:collapse;
+            -moz-border-radius: 1px 1px 0 0;
+            -webkit-border-radius: 1px 1px 0 0;
+            border-radius: 1px 1px 0 0;
+            }
+
+            .bordered tr:last-child td:first-child {
+            border-collapse:collapse;
+            -moz-border-radius: 0 0 0 1px;
+            -webkit-border-radius: 0 0 0 1px;
+            border-radius: 0 0 0 1px;
+            }
+
+            .bordered tr:last-child td:last-child {
+            border-collapse:collapse;
+            -moz-border-radius: 0 0 1px 0;
+            -webkit-border-radius: 0 0 1px 0;
+            border-radius: 0 0 1px 0;
+            }
+
+            td.alt {
+            background: #F5FAFA;
+            color: #797268;
+            }
+        </style>
+    </head>
+    <body>
+
+
+
+        <table class="bordered">
+
+            <tr>
+                <td>================================================</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table class="bordered">
+                        <tr>
+                            <th colspan="5">
+                                <h1>$!subject</h1>
+                                <h2>($!startTime ~ $!finishTime)</h2>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th rowspan="1">描述</th>
+                            <th rowspan="1">运营商</th>
+                            <th rowspan="1">省份</th>
+                            <th rowspan="1">通道</th>
+                            <th rowspan="1">当前值</th>
+                        </tr>
+                        <tr class="spec">
+                            <td rowspan="1">$!subject</td>
+                            <td rowspan="1">$!info.carrier</td>
+                            <td rowspan="1">$!info.province</td>
+                            <td rowspan="1">$!info.channel</td>
+                            <td rowspan="1">$!count</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
